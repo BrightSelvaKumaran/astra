@@ -27,7 +27,7 @@ app.controller('myController', function($scope, $window, LinkService) {
 
     $scope.incrementCount = function() {
         $scope.count++;
-        if ($scope.count <= 5) {
+        if ($scope.count <= 10) {
             for (var i = 0; i < $scope.links.length; i++) {
                 $window.open($scope.links[i].link, '_blank');
             }
@@ -35,7 +35,7 @@ app.controller('myController', function($scope, $window, LinkService) {
             $scope.showLogoutButton = true;
         }
 
-        if ($scope.count == 5) {
+        if ($scope.count == 10) {
             alert("TODAY'S SESSION OVER : LOG OUT PLEASE")
         }
     };
