@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <title>HOME</title>
+</head>
+<body ng-controller="myController" ng-init="checkLocalStorage()">
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-4 pb-5 text-uppercase">WELCOME</h2>
+                    <div class="form-outline form-white mb-4 pb-5">
+                      <input type="email" ng-model="typeEmailX" id="typeEmailX" class="form-control form-control-lg" placeholder="EMAIL"/>
+                    </div>
+                    <div class="form-outline form-white mb-4 pb-5">
+                      <input type="password" ng-model="typePasswordX" id="typePasswordX" class="form-control form-control-lg" placeholder="PASSWORD"/>
+                    </div>      
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit" ng-click="login()">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="script/angularjs/angular.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+</head>
+<body ng-controller="myController" ng-init="checkCondition()">
+    
+
+    
+
+    <div class="container p-4 pt-4 mt-4">
+        <div class="card p-4 mt-4 text-white bg-dark shadow mb-3">
+            <div class="card-head">
+                <h1>DASHBOARD</h1>
+                <hr>
+            </div>
+            <div class="card-body">
+                <p class="fs-3">Welcome, <span class="text-danger">{{ userName }}</span> !</p>
+                <div class="card p-4 mt-4 text-dark bg-light mb-3">
+                    <p class="fs-3 bolder">COUNT : {{count}}</p>
+                </div>
+                <div class="card p-4 mt-4 text-dark bg-light mb-3" ng-if="count < 5">
+                    <button class="btn btn-outline-primary" ng-click="incrementCount()">CLICK</button>
+                </div>
+                <div class="card p-4 mt-4 text-dark bg-light mb-3" ng-if="count >= 5">
+                    <button class="btn btn-outline-danger" ng-click="logout()">LOG OUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/angularjs/angular.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/dashboard.js"></script>
+    <script src="script/data/dataone.js"></script>
+</body>
+</html>
