@@ -11,4 +11,16 @@ var linkName = [{
 },
 {
     link:"https://www.crypmon.com/2023/07/monetizing-digital-revolution-roadmap.html"
-},]
+},
+{
+    link:"https://www.crypmon.com/2023/07/unearthing-clouds-gold-examining-return.html"
+},
+{
+    link:"https://www.crypmon.com/2023/07/crypto-empowerment-8-surefire-ways-to.html"
+},
+{
+    link:"https://www.crypmon.com/2023/07/investment-revolution-unlocking-new_10.html"
+},
+{
+    link:"https://www.crypmon.com/2023/07/from-ethereum-to-hyperledger-analyzing_10.html"
+}]
